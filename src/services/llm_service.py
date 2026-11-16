@@ -116,7 +116,7 @@ class GeminiLLMProvider(BaseLLMProvider):
 
     def __init__(self, api_key: Optional[str] = None, model: Optional[str] = None):
         self.api_key = api_key or settings.gemini_api_key or os.getenv("GEMINI_API_KEY", "")
-        self.model = model or settings.llm_model or "gemini-2.5-flash"
+        self.model = model or settings.llm_model or "gemini-3.1-flash-lite"
         if not self.api_key:
             raise LLMError(
                 "No se encontró GEMINI_API_KEY configurada. "

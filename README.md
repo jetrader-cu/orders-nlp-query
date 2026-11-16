@@ -110,6 +110,8 @@ Si deseas usar **Gemini** o **OpenAI**:
 ```env
 LLM_PROVIDER=gemini
 GEMINI_API_KEY=tu_clave_aqui
+LLM_MODEL=gemini-3.1-flash-lite   # Modelo recomendado: gratuito/más económico y de baja latencia
+                                  # Alternativa disponible: gemini-3.8-flash
 # O para OpenAI:
 # LLM_PROVIDER=openai
 # OPENAI_API_KEY=tu_clave_aqui
